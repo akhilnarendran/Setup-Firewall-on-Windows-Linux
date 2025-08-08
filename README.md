@@ -73,6 +73,8 @@ Windows Firewall Setup  (Windows Defender Firewall)
 
 LINUX UFW (Uncomplicated Firewall) 
 
+<img width="913" height="470" alt="Image" src="https://github.com/user-attachments/assets/05170b5f-7366-49b3-8d9d-39aa2ec3d996" />
+
 you can install it by running the following linux command.
       
       # aptupdate && upgrade -y
@@ -90,7 +92,13 @@ You can add rules for allowing incoming and outgoing traffic in two ways, using 
 
     # sudo ufw allow http 
     # sudo ufw allow 80 
-    
+    # sudo ufw allow 23
+
+If you want to denying  incoming
+
+    # sudo ufw deny 23
+    # sudo ufw deny 22
+    # sudo ufw deny http
 If you want to filter packets based on TCP or UDP,
 
      sudo ufw allow 80/tcp 
