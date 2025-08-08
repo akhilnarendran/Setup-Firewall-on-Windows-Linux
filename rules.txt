@@ -1,0 +1,36 @@
+
+Part 2: Linux Firewall Setup and Use (UFW)
+Step 1: Open Terminal
+Step 2: List Current Firewall Rules
+
+-------------------------------------------------------------------
+
+sudo ufw status verbose
+Step 3: Add a Rule to Block Inbound Traffic on Port 23 (Telnet)
+sudo ufw deny 23/tcp 
+ 
+------------------------------------------------------------------- 
+ 
+Step 4: Test the Rule
+Try connecting to port 23 locally or remotely:23
+telnet localhost 23
+The connection should fail or time out.
+
+---------------------------------------------------------------------
+
+Step 5: Add Rule to Allow SSH (Port 22)
+sudo ufw allow 22/tcp
+
+--------------------------------------------------------------------- 
+
+Step 6: Remove the Test Block Rule
+sudo ufw delete deny 23/tcp
+
+
+**********************************************************************
+
+How Firewall Filters Traffic
+
+A firewall filters network traffic based on rules defined by the administrator. It inspects incoming and outgoing packets and allows or blocks them based on criteria such as port number, protocol (TCP/UDP), IP address, or application. For example, blocking port 23 prevents Telnet connections, enhancing security by reducing attack surfaces. Allowing port 22 enables secure SSH access. Firewalls operate at the network layer to enforce these policies, protecting systems from unauthorized access.
+
+
