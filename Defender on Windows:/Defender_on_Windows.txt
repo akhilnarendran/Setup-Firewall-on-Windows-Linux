@@ -1,0 +1,44 @@
+Configuring Firewall Defender on Windows
+
+*********************************************************************
+Step 1: Launch Start from the taskbar
+
+Step 2: Search “Settings”  in the search bar if you do not find the Settings icon in Start menu.
+
+Step 3: In the left pane of Settings, click Privacy & security.
+
+Step 4: Click Windows Security option in Privacy & security menu.
+
+Step 5: Select Firewall & network protection.
+
+Step 6: Now Window's Security window will pop up window's. Here you can verify whether your Defender firewall is active or not.
+
+7: Now to configure the firewall according to your requirement, click Advanced settings. You will be prompted by User Account Control to give Administrative access to Windows Defender to make changes. Click Yes to proceed.
+
+Step 8: Windows Defender Firewall with Advanced Security window will launch after giving administrative permission.
+
+Step 9: The left pane has several options:
+
+    Inbound rules: Programs, processes, ports can be allowed or denied the incoming transmission of data within this inbound rules.
+    Outbound rules: Here we can specify whether data can be sent outwards by that program, process, or port.
+    
+    
+    
+    
+    
+Step 10: To add a new inbound rule, select Inbound Rules option, then click New Rule… from the right pane.
+    
+Step 11: Now we will configure an inbound rule for a network port. A New Inbound Rule Wizard window pops-up, select Port option and click next.
+    
+Step 12: Now select TCP and specify port number 65000
+    
+    Step 13: Now we can select the action we need to take on this port. We will block the inbound connection by selecting Block the connection option then click Next.
+    
+Step 14: Here we can specify when should this rule come into action. We will keep only Public option selected and move Next.
+ 
+Step 15: This is the last step. Here we provide a name to this rule so that we can keep track of it later in the Inbound rules list. Write the name “65000 Port Block (Public)”. Click Finish.
+    
+    
+Step 16: The inbound rule is successfully created. We can find “65000 Port Block (Public)” in the Inbound rules list.
+
+Step 17: Right-click the rule we just created and there are multiple options with which it can be Disabled or Deleted.
