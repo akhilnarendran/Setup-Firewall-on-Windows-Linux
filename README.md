@@ -28,10 +28,11 @@ Working of Firewall
 _____________________________________________________________________________________________________________________________________________________________________________
 
 Windows Firewall Setup  (Windows Defender Firewall)
+
  "we can use"
    1. Windows Defender (Default firewall).
    2. Third-party firewalls.
-
+<img width="922" height="483" alt="Image" src="https://github.com/user-attachments/assets/93a649b3-c458-4d4a-9be4-dfb978f3cf04" />
 
 
   1. Open Windows Firewall
